@@ -281,3 +281,68 @@ body {
     top: 0;
     left: 0;
 }
+
+
+/*--------about--------*/
+
+.main__about {}
+
+.about {
+    padding: 80px 175px 100px 175px;
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding: 80px 135px 100px 135px;
+    }
+}
+
+.about__container {}
+
+.about__body {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .about__body {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+.about__image {
+    flex: 0 1 calc(50% - 10px);
+}
+
+.about__image img {
+    max-width: 100%;
+}
+
+.about__content {
+    flex: 0 1 calc(50% + 10px);
+}
+
+.about__content>*:not(:last-child) {
+    margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+    .about__content {
+        margin-bottom: 80px;
+    }
+}
+
+.about__title {}
+
+.block-title {
+    max-width: 370px;
+    color: #545454;
+    font-family: 'Georgia';
+    font-size: 35px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+}
+
+.about__text {
+    line-height: 160%;
+}
