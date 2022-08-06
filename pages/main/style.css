@@ -188,7 +188,7 @@ body {
 .menu__link {
     color: #FAFAFA;
     line-height: 160%;
-    transition: 00.3s;
+    transition: 0.3s;
 }
 
 .menu__link:hover {
