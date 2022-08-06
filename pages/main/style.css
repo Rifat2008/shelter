@@ -177,7 +177,9 @@ body {
     flex-wrap: wrap;
 }
 
-.menu__item {}
+.menu__item:first-child {
+    border-bottom: 3px solid #F1CDB3;
+}
 
 .menu__item:not(:last-child) {
     margin-right: 35px;
