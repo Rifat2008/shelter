@@ -19,10 +19,10 @@
                 </div>
                 <nav class="header__menu menu">
                     <ul class="menu__list">
-                        <li class="menu__item"><a href="" class="menu__link">About the shelter</a></li>
+                        <li class="menu__item"><a href="#about" class="menu__link">About the shelter</a></li>
                         <li class="menu__item"><a href="" class="menu__link">Our pets</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">Help the shelter</a></li>
-                        <li class="menu__item"><a href="" class="menu__link">Contacts</a></li>
+                        <li class="menu__item"><a href="#help" class="menu__link">Help the shelter</a></li>
+                        <li class="menu__item"><a href="#contacts" class="menu__link">Contacts</a></li>
                     </ul>
                 </nav>
             </div>
@@ -52,7 +52,7 @@
                             <img src="../../assets/images/about/about-pets.png" alt="pets">
                         </div>
                         <div class="about__content">
-                            <h2 class="about__title block-title">About the shelter “Cozy House”</h2>
+                            <h2 class="about__title block-title" id="about">About the shelter “Cozy House”</h2>
                             <p class="about__text">
                                 Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The others will continue to live with us and will be waiting for a lucky chance to become dearly loved.
                             </p>
@@ -97,7 +97,7 @@
             </section>
             <section class="main__help help">
                 <div class="help__container _container">
-                    <h2 class="help__title block-title">How you can help our shelter</h2>
+                    <h2 class="help__title block-title" id="help">How you can help our shelter</h2>
                     <div class="help__body">
                         <div class="help__items">
                             <div class="help__item item-help">
@@ -169,10 +169,10 @@
                 <div class="donation__content">
                     <h2 class="donation__title block-title">You can also make a donation</h2>
                     <p class="donation__subtitle">Name of the bank / Type of bank account</p>
-                    <div class="donation__account credit-card">
+                    <a href="#" class="donation__account credit-card">
                         <img src="../../assets/icons/donation/credit-card.svg" alt="credit-card" class="credit-card__icon"></img>
                         <p class="credit-card__number">8380 2880 8028 8791 7435</p>
-                    </div>
+                    </a>
                     <p class="donation__legal-info">
                         Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.
                     </p>
@@ -183,7 +183,40 @@
     </main>
     </div>
     <footer class="footer">
-        Я подвал
+        <div class="footer__container _container">
+            <div class="footer__content">
+                <div class="footer__column contacts">
+                    <h3 class="footer__title contacts-title block-title" id="contacts">For questions and suggestions</h3>
+                    <div class="contacts__content">
+                        <a href="mailto:email@shelter.com" class="contacts__item">
+                            <img src="../../assets/icons/footer/icon-email.svg" alt="icon-email">
+                            <p class="contacts__text">email@shelter.com</p>
+                        </a>
+                        <a href="tel:136745677554" class="contacts__item">
+                            <img src="../../assets/icons/footer/icon-phone.svg" alt="icon-phone">
+                            <p class="contacts__text">+13 674 567 75 54</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__column location">
+                    <h3 class="footer__title location-title block-title">We are waiting for your visit</h3>
+                    <div class="location__content">
+                        <a href="https://www.google.com/maps/d/viewer?ie=UTF8&oe=UTF8&msa=0&mid=1OV1Rzw0GrU3RdBfAi_rK_Vr9xHA&ll=42.358551900000016%2C-71.0547263&z=18" class="location__city">
+                            <img src="../../assets/icons/footer/icon-marker.svg" alt="icon-marker">
+                            <p class="location__text">1 Central Street, Boston (entrance from the store)</p>
+                        </a>
+                        <a href="https://www.google.com/maps/d/viewer?ie=UTF8&oe=UTF8&msa=0&mid=1OV1Rzw0GrU3RdBfAi_rK_Vr9xHA&ll=51.45179589930191%2C-0.03963839706844441&z=21" class="location__city">
+                            <img src="../../assets/icons/footer/icon-marker.svg" alt="icon-marker">
+                            <p class="location__text">18 South Park, London </p>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__image">
+                    <img src="../../assets/images/footer/footer-puppy.png" alt="puppy">
+                </div>
+            </div>
+
+        </div>
 
     </footer>
 
