@@ -17,10 +17,19 @@
                     <a href="#" class="header__logo-link">Cozy House</a>
                     <p class="header__logo-subtitle">Shelter for pets in Boston</p>
                 </div>
-                <span class="header__hamburger hamburger"><span class="hamburger__line"></span></span>
+                <div class="burger-menu ">
+                    <span class="hamburger"><span class="hamburger__line"></span></span>
+                    <nav class="burger-menu__nav">
+                        <a href="#about" class="burger-menu__link menu__item-active">About the shelter</a>
+                        <a href="../pets/index.html" class="burger-menu__link">Our pets</a>
+                        <a href="#help" class="burger-menu__link">Help the shelter</a>
+                        <a href="#contacts" class="burger-menu__link">Contacts</a>
+                    </nav>
+                    <div class="burger-menu__overlay"></div>
+                </div>
                 <nav class="header__menu menu">
                     <ul class="menu__list">
-                        <li class="menu__item"><a href="#about" class="menu__link">About the shelter</a></li>
+                        <li class="menu__item menu__item-active"><a href="#about" class="menu__link">About the shelter</a></li>
                         <li class="menu__item"><a href="../pets/index.html" class="menu__link">Our pets</a></li>
                         <li class="menu__item"><a href="#help" class="menu__link">Help the shelter</a></li>
                         <li class="menu__item"><a href="#contacts" class="menu__link">Contacts</a></li>
@@ -29,8 +38,10 @@
             </div>
         </header>
         <main class="main">
+
             <section class="main__notonly notonly">
                 <div class="notonly__container _container">
+
                     <div class="notonly__body">
                         <div class="notonly__content">
                             <h1 class="notonly__title">Not only people need a house</h1>
@@ -221,7 +232,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="../main/script.js"></script>
 </body>
 
 </html>

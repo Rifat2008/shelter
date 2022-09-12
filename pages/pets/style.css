@@ -244,7 +244,7 @@ body {
     }
 }
 
-.menu__item:nth-child(2) {
+.menu__item-active {
     border-bottom: 3px solid #F1CDB3;
 }
 
@@ -344,10 +344,13 @@ body {
         margin-bottom: 25px;
         justify-content: center;
     }
-    .item-ourfriends:nth-child(7) {
+    .item-ourfriends:nth-child(1n+7) {
         display: none;
     }
-    .item-ourfriends:nth-child(8) {
+}
+
+@media (max-width: 609px) {
+    .item-ourfriends:nth-child(1n+4) {
         display: none;
     }
 }
