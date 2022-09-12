@@ -1,4 +1,4 @@
-function burgerMenu() {
+/*function burgerMenu() {
     let menu = document.querySelector('.burger-menu');
     let hamburger = document.querySelector('.hamburger');
     let links = document.querySelectorAll('.burger-menu__link');
@@ -28,4 +28,37 @@ function burgerMenu() {
     }
 }
 
-burgerMenu();
+burgerMenu();*/
+
+const MENU = document.querySelector('.menu__body');
+const MENU_BUTTON = document.querySelector('.menu__icon');
+const OVERLAY = document.querySelector('.menu__overlay');
+const BODY = document.body;
+
+if (MENU && MENU_BUTTON) {
+    MENU_BUTTON.addEventListener('click', () => {
+        MENU.classList.toggle('active');
+        MENU_BUTTON.classList.toggle('active');
+        BODY.classList.toggle('lock');
+    })
+
+    OVERLAY.addEventListener('click', e => {
+        if (e.target.classList.contains('menu__body')) {
+            MENU.classList.remove('active');
+            MENU_BUTTON.classList.remove('active');
+            BODY.classList.remove('lock');
+        } 
+    })
+
+    MENU.querySelectorAll('.menu__link').forEach(link =>{
+        link.addEventListener('click', () => {
+            MENU.classList.remove('active');
+            MENU_BUTTON.classList.remove('active');
+            BODY.classList.remove('lock');
+        })
+    })
+}
+
+
+
+
