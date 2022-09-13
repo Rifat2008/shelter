@@ -30,6 +30,7 @@
 
 burgerMenu();*/
 
+const HEADER = document.querySelector('.header__menu');
 const MENU = document.querySelector('.menu__body');
 const MENU_BUTTON = document.querySelector('.menu__icon');
 const OVERLAY = document.querySelector('.menu__overlay');
@@ -42,12 +43,11 @@ if (MENU && MENU_BUTTON) {
         BODY.classList.toggle('lock');
     })
 
-    OVERLAY.addEventListener('click', e => {
-        if (e.target.classList.contains('menu__body')) {
-            MENU.classList.remove('active');
+    OVERLAY.addEventListener('click', () => {
+            /*MENU.classList.remove('active');
             MENU_BUTTON.classList.remove('active');
-            BODY.classList.remove('lock');
-        } 
+            BODY.classList.remove('lock');*/
+            console.log("overlay");
     })
 
     MENU.querySelectorAll('.menu__link').forEach(link =>{
