@@ -17,16 +17,6 @@
                     <a href="#" class="header__logo-link">Cozy House</a>
                     <p class="header__logo-subtitle">Shelter for pets in Boston</p>
                 </div>
-                <!--<div class="burger-menu ">
-                    <span class="hamburger"><span class="hamburger__line"></span></span>
-                    <nav class="burger-menu__nav">
-                        <a href="#about" class="burger-menu__link menu__item-active">About the shelter</a>
-                        <a href="../pets/index.html" class="burger-menu__link">Our pets</a>
-                        <a href="#help" class="burger-menu__link">Help the shelter</a>
-                        <a href="#contacts" class="burger-menu__link">Contacts</a>
-                    </nav>
-                    <div class="burger-menu__overlay"></div>
-                </div>-->
                 <div class="header__menu menu">
                     <div class="menu__icon">
                         <span class="hamburger__line"></span>
@@ -39,12 +29,11 @@
                             <li class="menu__item"><a href="#contacts" class="menu__link">Contacts</a></li>
                         </ul>
                     </nav>
-                    <div class="menu__overlay"></div>
                 </div>
             </div>
         </header>
         <main class="main">
-
+            <div class="menu__overlay"></div>
             <section class="main__notonly notonly">
                 <div class="notonly__container _container">
                     <div class="notonly__body">
@@ -89,33 +78,72 @@
                 <div class="ourfriends__container _container">
                     <h2 class="ourfriends__title block-title" id="ourfriends">Our friends who <br> are looking for a house</h2>
                     <div class="ourfriends__body">
-                        <button class="ourfriends__arrow">
+                        <button class="ourfriends__arrow arrow-left">
                             <img src="../../assets/icons/ourfriends/arrow-left.png" alt="arrow-left">
                         </button>
-                        <div class="ourfriends__cards">
-                            <div class="ourfriends__item item-ourfriends">
-                                <img src="../../assets/images/ourfriends/pets-katrine.png" alt="pets-katrine">
-                                <h4 class="item-ourfriends__name">Katrine</h4>
-                                <button class="item-ourfriends__button">Learn more</button>
-                            </div>
-                            <div class="ourfriends__item item-ourfriends">
-                                <img src="../../assets/images/ourfriends/pets-jennifer.png" alt="pets-jennifer">
-                                <h4 class="item-ourfriends__name">Jennifer</h4>
-                                <button class="item-ourfriends__button">Learn more</button>
-                            </div>
-                            <div class="ourfriends__item item-ourfriends">
-                                <img src="../../assets/images/ourfriends/pets-woody.png" alt="pets-woody">
-                                <h4 class="item-ourfriends__name">Woody</h4>
-                                <button class="item-ourfriends__button">Learn more</button>
+                        <div class="carousel-wrapper" id="carousel-wrapper">
+                            <div class="carousel" id="carousel">
+                                <div class="ourfriends__cards" id="cards-left">
+                                    <div class="ourfriends__item item-ourfriends">
+                                        <img src="../../assets/images/ourfriends/pets-sophia.png" alt="pets-sophia">
+                                        <h4 class="item-ourfriends__name">Sophia</h4>
+                                        <button class="item-ourfriends__button">Learn more</button>
+                                    </div>
+                                    <div class="ourfriends__item item-ourfriends">
+                                        <img src="../../assets/images/ourfriends/pets-timmy.png" alt="pets-timmy">
+                                        <h4 class="item-ourfriends__name">Timmy</h4>
+                                        <button class="item-ourfriends__button">Learn more</button>
+                                    </div>
+                                    <div class="ourfriends__item item-ourfriends">
+                                        <img src="../../assets/images/ourfriends/pets-charly.png" alt="pets-charly">
+                                        <h4 class="item-ourfriends__name">Charly</h4>
+                                        <button class="item-ourfriends__button">Learn more</button>
+                                    </div>
+                                </div>
+                                <div class="ourfriends__cards" id="cards-active">
+                                    <div class="ourfriends__item item-ourfriends">
+                                        <img src="../../assets/images/ourfriends/pets-katrine.png" alt="pets-katrine">
+                                        <h4 class="item-ourfriends__name">Katrine</h4>
+                                        <button class="item-ourfriends__button">Learn more</button>
+                                    </div>
+                                    <div class="ourfriends__item item-ourfriends">
+                                        <img src="../../assets/images/ourfriends/pets-jennifer.png" alt="pets-jennifer">
+                                        <h4 class="item-ourfriends__name">Jennifer</h4>
+                                        <button class="item-ourfriends__button">Learn more</button>
+                                    </div>
+                                    <div class="ourfriends__item item-ourfriends">
+                                        <img src="../../assets/images/ourfriends/pets-woody.png" alt="pets-woody">
+                                        <h4 class="item-ourfriends__name">Woody</h4>
+                                        <button class="item-ourfriends__button">Learn more</button>
+                                    </div>
+                                </div>
+                                <div class="ourfriends__cards" id="cards-right">
+                                    <div class="ourfriends__item item-ourfriends">
+                                        <img src="../../assets/images/ourfriends/pets-scarlet.png" alt="pets-scarlet">
+                                        <h4 class="item-ourfriends__name">Scarlet</h4>
+                                        <button class="item-ourfriends__button">Learn more</button>
+                                    </div>
+                                    <div class="ourfriends__item item-ourfriends">
+                                        <img src="../../assets/images/ourfriends/pets-freddie.png" alt="pets-freddie">
+                                        <h4 class="item-ourfriends__name">Freddie</h4>
+                                        <button class="item-ourfriends__button">Learn more</button>
+                                    </div>
+                                    <div class="ourfriends__item item-ourfriends">
+                                        <img src="../../assets/images/ourfriends/pets-freddie.png" alt="pets-freddie">
+                                        <h4 class="item-ourfriends__name">Freddie</h4>
+                                        <button class="item-ourfriends__button">Learn more</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <button class="ourfriends__arrow">
+                        <button class="ourfriends__arrow arrow-right">
                             <img src="../../assets/icons/ourfriends/arrow-right.png" alt="arrow-right">
                         </button>
                     </div>
                     <form method="get" action="../pets/index.html">
                         <button class="ourfriends__button">Get to know the rest</button>
                     </form>
+                    <div class="modal"></div>
                 </div>
             </section>
             <section class="main__help help">
@@ -239,7 +267,8 @@
             </div>
         </div>
     </footer>
-    <script src="../main/script.js"></script>
+    <script src="../main/carusel.js"></script>
+    <script src="../main/modal.js"></script>
 </body>
 
 </html>
